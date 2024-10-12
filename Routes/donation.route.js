@@ -28,7 +28,7 @@
 
 const express = require('express');
 const router = express.Router();
-const Donation = require('../models/Donation');
+const Donation = require('../Models/donations.model.js');
 
 // @route   POST /donations
 // @desc    Create a new donation

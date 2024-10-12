@@ -45,7 +45,7 @@
 
 const express = require('express');
 const router = express.Router();
-const Survey = require('../models/Survey');
+const Survey = require('../Models/surveys.model.js');
 
 // @route   POST /surveys
 // @desc    Create a new survey

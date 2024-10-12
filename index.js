@@ -14,10 +14,10 @@ app.use(cors());
 const connectToDatabase = require("./db.js");
 connectToDatabase();
 
-const pollsRoutes = require("./routes/polls.routes.js");
-const surveysRoutes = require("./routes/surveys.routes.js");
-const donationsRoutes = require("./routes/donations.routes.js");
-const eventsRoutes = require("./routes/events.routes.js");
+const pollsRoutes = require("./Routes/poll.routes.js");
+const surveysRoutes = require("./Routes/survey.route.js");
+const donationsRoutes = require("./Routes/donation.route.js");
+const eventsRoutes = require("./Routes/event.route.js");
 
 app.use("/events", eventsRoutes);
 app.use("/donations", donationsRoutes);

@@ -29,16 +29,8 @@
 
 const express = require('express');
 const router = express.Router();
-const Event = require('../models/Event');
+const Event = require('../Models/events.model.js');
 
-// @route   POST /events
-// @desc    Create a new event
-// @body    {
-//           "title": "Event title",
-//           "description": "Event description",
-//           "date": "2024-10-01",
-//           "location": "Event location"
-//          }
 router.post('/', async (req, res) => {
   try {
     const event = new Event(req.body);

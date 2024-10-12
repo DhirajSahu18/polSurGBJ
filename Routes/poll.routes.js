@@ -46,7 +46,7 @@
 
 const express = require('express');
 const router = express.Router();
-const Poll = require('../models/Poll');
+const Poll = require('../Models/polls.model.js');
 
 // @route   POST /polls
 // @desc    Create a new poll
